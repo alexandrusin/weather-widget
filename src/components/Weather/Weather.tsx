@@ -14,6 +14,10 @@ type Props = {
 export default function Weather({ showLocation, size }: Props) {
 	const { todayData, valuesData, forecastData } = useWeather();
 
+	//force small size on mobile
+	const isMobile = window.innerWidth <= 600;
+	size = isMobile ? "small" : size;
+
 	return (
 		<div className={`weather-wrapper ${size}`}>
 			{showLocation && (
