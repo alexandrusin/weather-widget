@@ -13,7 +13,10 @@
 	border-radius: 4px;
 
 	&.small {
-		max-width: 300px;
+		max-width: 400px;
+		margin: 0;
+		position: absolute;
+		inset: 0;
 		.location-wrapper {
 			display: flex;
 			align-items: center;
