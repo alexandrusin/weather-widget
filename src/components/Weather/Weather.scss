@@ -1,0 +1,39 @@
+@use 'src/styles/typography' as *;
+
+.weather-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	max-width: 500px;
+	margin: 10px auto;
+
+	padding: 10px;
+	background: skyblue;
+	background: linear-gradient(to bottom, lightblue 0%, skyblue 100%);
+	border-radius: 4px;
+
+	&.small {
+		max-width: 300px;
+		.location-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.city,
+			.weather {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.location-wrapper {
+		text-align: center;
+	}
+	.city {
+		font-size: 24px;
+		text-transform: uppercase;
+	}
+	.weather {
+		text-transform: capitalize;
+	}
+}

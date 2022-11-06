@@ -1,0 +1,25 @@
+.values-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+
+	&.small {
+		grid-template-columns: 1fr 1fr;
+		gap: 5px;
+
+		.label {
+			flex-direction: column;
+			gap: 0;
+		}
+	}
+
+	.label {
+		display: flex;
+		gap: 10px;
+
+		span {
+			text-transform: uppercase;
+			opacity: 0.4;
+		}
+	}
+}
